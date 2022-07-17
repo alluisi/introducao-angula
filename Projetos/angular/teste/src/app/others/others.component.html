@@ -1,0 +1,8 @@
+<ul>
+    <li *ngFor="let item of [1,2,3]">
+        Valor: {{ item }}
+    </li>
+</ul>
+<h1 *ngIf="isVisible">Segredo</h1>
+<div [ngClass]="isRed ? 'red' : 'green'">Vermelho?</div>
+<div [ngStyle]="{ 'background-color': isRed ? 'red' : 'green' }">Vermelho?</div>
